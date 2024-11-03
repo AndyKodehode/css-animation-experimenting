@@ -37,10 +37,40 @@ nav a[aria-current='page'] {
 }
 
 main {
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 100vh;
+  background-color: #050801;
+  
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+button{
+  width: 180px;
+  height: 50px;
+  color: #03e9f4;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: none;
+  transition: 0.5s;
+  overflow: hidden;
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(90deg, #03e9f4, transparent)1;
+  
+
 }
+
+
+
+button:hover{
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 200px #03e9f4;
+    }
+
